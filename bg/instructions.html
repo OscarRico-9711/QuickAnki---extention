@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/tabmenu.css">
+    <link rel="stylesheet" href="css/instructions.css">
+    <title>Instrucciones</title>
+</head>
+<body>
+    <div class="container">
+        <center><img src="../img/icon128.png" alt="Logo QuickAnki" style="border: none; width: 128px;"></center>
+        <div class="tabmenus">
+            <a href="#" data-contentid="tab-1" class="tabmenu active">Español</a>
+            <a href="#" data-contentid="tab-2" class="tabmenu">English</a>
+        </div>
+
+        <div id="tab-1" class="tabcontent">
+            <button class="accordion">1- ¿Cómo funciona QuickAnki?</button>
+            <div class="panel">
+            <p>Una vez que hayas instalado QuickAnki, es necesario configurarlo según tus preferencias. Para ello, abre la extensión siguiendo estos pasos para acceder al menú emergente de opciones rápidas:</p>
+            <p style="text-align: center;"><img style="border: 1px solid black;" src="../img/instructions/GIF1.gif"></p>
+            <p>Dentro de este menú, podrás controlar la activación o desactivación de la extensión, así como habilitar o deshabilitar la función "Mouse" que te permite buscar el significado de una palabra con tan solo seleccionarla. También podrás seleccionar qué diccionario estará activo y, por último, determinar qué tecla se utilizará como acceso directo para buscar el significado de una palabra en caso de que el Mouse no realice la búsqueda correctamente.</p>
+            <p>Para acceder a todas las opciones avanzadas y personalizar la extensión según tus preferencias, haz clic en los tres puntos ubicados en la esquina superior derecha. Esto abrirá una ventana que contiene cuatro pestañas: "Opciones de Extensión", "Opciones de Servicios", "Opciones de Diccionarios" y "Ayúdanos a Crecer". A través de estas pestañas podrás explorar y ajustar diversas configuraciones para adaptar la extensión a tus necesidades.</p>
+            <p style="text-align: center;"><img src="../img/instructions/tuto1.png"><br>Modal de Opciones</p>
+            <br>
+            <p>Permíteme explicar cada una de estas pestañas en detalle:</p>
+            <ol>
+                <li>Pestaña de <strong>Opciones de Extensión</strong>:</li>
+                <p>En esta pestaña encontrarás las <strong>opciones generales</strong> de la extensión:</p>
+                <ul>
+                    <li><strong>Activar:</strong> Esta opción te permite activar o desactivar la extensión según tus necesidades. Es recomendable mantenerla desactivada mientras navegas por Internet, ya que podría abrir el diccionario automáticamente cada vez que selecciones una palabra, lo cual puede resultar molesto. Se recomienda activarla únicamente cuando estés haciendo minado de oraciones.</li>
+                    <li><strong>Atajo:</strong> Aquí puedes configurar una tecla de acceso directo para seleccionar las palabras o frases que deseas traducir. Tienes cuatro opciones disponibles: "Off" (deshabilita el acceso directo), "Shift", "Ctrl" y "Alt". Por ejemplo, si estás leyendo un artículo sobre Anki y encuentras una palabra desconocida como "Program", puedes seleccionarla y utilizar la tecla de acceso directo que has configurado. Esto abrirá una ventana emergente del diccionario, donde podrás ver la traducción y algunos ejemplos de uso:
+                    <p"><img style="border: 1px solid black; height: 100%; width: 100%;" src="../img/instructions/tuto2.png"></p><br>
+                    </li>
+                    <li><strong>Mouse Sel. (Selección con el mouse):</strong> Esta opción te permite abrir el diccionario simplemente seleccionando una palabra con el mouse, sin necesidad de utilizar la tecla de acceso directo configurada.</li>
+                </ul>
+                <p>También encontrarás la sección de <strong>opciones de diccionarios</strong>, la cual incluye las siguientes configuraciones:</p>
+                <ul>
+                    <li><strong>Sel. Diccionario. (Seleccionar diccionario):</strong> En esta opción se cargan todos los diccionarios que tienes activados en la pestaña "Opciones de Diccionarios" (que explicaré más adelante). El diccionario seleccionado aquí será el que esté activo en ese momento. Por ejemplo, en la imagen del modal de opciones se muestra que está activo el diccionario "Inglés -> Español | Cambridge", lo que significa que solo funcionará para traducciones del inglés al español.</li>
+                    <li><strong>Mono/Bilingüe:</strong> Esta opción te permite convertir el diccionario en uno monolingüe o bilingüe. Si seleccionas "Bilingüe", la ventana del diccionario mostrará la traducción de la palabra, como se muestra en la imagen anterior con el ejemplo de "Program". En cambio, si seleccionas "Monolingüe", la ventana mostrará ejemplos en contexto relacionados con la palabra seleccionada:
+                    <p style="text-align: center;"><img style="border: 1px solid black;" src="../img/instructions/tuto3.png"></p><br></li>
+                    <li><strong>Pref. de audio (Preferencia de audio):</strong> Aquí puedes seleccionar el tipo de pronunciación que prefieres que se guarde en Anki, ya sea con acento británico o acento americano, en caso de estar estudiando inglés.</li>
+                    <li><strong>Max.Contexto# (Máximo de contexto):</strong> Esta configuración te permite establecer la cantidad de ejemplos de contexto que deseas ver junto con la palabra seleccionada.</li>
+                    <li><strong>Max.Ejemplo# (Máximo de ejemplos):</strong> Esta configuración te permite establecer la cantidad de ejemplos de la palabra que deseas ver.</li>
+                </ul>
+                <p>Por último, si quieres volver a ver estas instrucciones simplemente haz clic en el icono de interrogación a la derecha de “opciones generales”.</p>
+                <br>
+                <li>Pestaña de <strong>Opciones de Servicios</strong></li>
+                <p style="text-align: center;"><img style="border: 1px solid black;" src="../img/instructions/tuto4.png"></p><br>
+                <p>En esta pestaña, estableceremos la conexión entre la extensión y Anki, la plataforma de tarjetas de estudio.</p>
+                <p>En la opción "Data Export" encontraremos dos selecciones posibles, siendo "None" la opción predeterminada. La otra opción es "Ankiconnect".</p>
+                <p>Antes de continuar, es necesario instalar el complemento Ankiconnect en nuestro Anki. Para descargar e instalar este complemento, copia y pega el siguiente código en la interfaz de Anki: <strong>2055492159</strong></p>
+                <p><img style="height: 100%; width: 100%;" src="../img/instructions/GIF2.gif"></p><br>
+                <p>Una vez que hayas instalado Ankiconnect, es importante reiniciar Anki para asegurarnos de que la extensión se conecte correctamente.</p>
+                <p>A continuación, te solicitaré que descargues e instales este <a href="../fg/Mazo-de-Prueba.apkg">mazo de prueba</a> en tu Anki. Una vez instalado, puedes desinstalarlo inmediatamente. La finalidad de esto es guardar un formato de tarjetas al cual llamamos "Minado de oraciones - QuickAnki", el cual utiliza el mismo estilo de diseño de las tarjetas de los mazos de <a href="https://refold.la/es/" target="_blank">Refold</a> (cabe aclarar que este mazo solo proporciona el diseño y no los mazos de Refold en sí). Si deseas adquirir los mazos de Refold, te recomiendo visitar su página web. La instalación de este mazo es importante para asegurar un diseño óptimo de las tarjetas al estudiar y realizar el minado de palabras, también es necesario para la configuración.</p>
+                <p>Excelente, ahora que tienes Ankiconnect y el mazo de prueba ya instalados, podemos ajustar la pestaña "Opciones de servicios". Para comenzar, selecciona la opción "Ankiconnect" en la sección "Data Export". Al marcar Ankiconnect, la vista cambiará y te recomiendo que realices la configuración de la siguiente manera:</p>
+                <p style="text-align: center;"><img style="border: 1px solid black;" src="../img/instructions/tuto5.png"></p><br>
+                <p>En esta sección, estaremos configurando cómo se guardarán las tarjetas en Anki, incluyendo su formato y en qué mazo se almacenarán. Para cambiar el mazo en el que se guardarán las palabras que estás minando, simplemente selecciona el mazo deseado en la opción "Seleccionar Mazo" (aquí se cargarán todos los mazos disponibles en tu Anki).</p>
+                <p>Además, la última opción denominada "Tarjeta Duplicada" te permite evitar la inclusión de palabras repetidas en tu mazo. Sin embargo, si deseas guardar palabras duplicadas, puedes modificar esta configuración según tus preferencias.</p>
+                <br>
+                <li>Pestaña de <strong>Opciones de Diccionarios</strong></li>
+                <p style="text-align: center;"><img style="border: 1px solid black;" src="../img/instructions/tuto6.png"></p><br>
+                <p>En esta pestaña, encontrarás todos los diccionarios disponibles en la extensión. Estos se muestran en la sección "Diccionarios" ubicada en la parte inferior. Puedes activar o desactivar los diccionarios haciendo clic en los cuadros a la izquierda de cada uno. Los diccionarios activados aparecerán en la primera pestaña, "Opciones de extensión", donde podrás seleccionar cuál deseas utilizar (solo se puede utilizar uno a la vez).</p>
+                <p>En la sección "Diccionario del usuario", tienes la opción de instalar tu propio diccionario. Sin embargo, es importante mencionar que esto requiere conocimientos de programación. Si deseas obtener más información sobre cómo desarrollar tu propio diccionario, puedes hacer clic en el icono de interrogación que se encuentra a la derecha de la sección. Allí encontrarás una guía que te ayudará a comenzar. Además, quiero destacar que estamos trabajando para agregar más diccionarios a QuickAnki, así que te pedimos paciencia y confianza en nuestro equipo mientras seguimos mejorando la extensión.</p>
+                <p>Retomando el tema de la activación de los diccionarios, como mencioné anteriormente, debes activar o desactivar los diccionarios utilizando los cuadros de selección ubicados a la izquierda de cada uno. Una vez que hayas decidido cuáles deseas activar, debes hacer clic en el botón inferior que se denomina "Cargar Scripts". Esto actualizará los diccionarios en la pestaña número 1, "Opciones de Extensión", permitiéndote seleccionar y activar el que desees utilizar.</p>
+                <p>Una vez completado este paso, simplemente haz clic en "Guardar y Cerrar" para finalizar la configuración. Ahora estás listo para empezar el minado de oraciones utilizando la extensión.</p>
+                <br>
+                <li>Pestaña de <strong>Ayúdanos a Crecer</strong></li>
+                <p>En esta pestaña encontrarás una oportunidad de apoyar el desarrollo continuo de nuestra extensión. Si consideras que esta herramienta es útil y deseas contribuir a su mejora y la incorporación de nuevas funciones, te invitamos a realizar una donación a través de PayPal.</p>
+                <p>Tu generosa contribución nos ayuda a cubrir los costos de mantenimiento, actualizaciones y el tiempo invertido en el desarrollo de la extensión. Cada pequeña donación marca una gran diferencia y nos motiva a seguir ofreciendo una experiencia de calidad.</p>
+                <p>Si deseas mostrar tu apoyo y realizar una donación, simplemente haz clic en el botón de donación. Serás redirigido a nuestra página de donaciones en PayPal, donde podrás realizar tu contribución.</p>
+                <p>Agradecemos sinceramente tu generosidad y apoyo. Tu donación nos impulsa a seguir mejorando y añadiendo nuevas características a la extensión. ¡Muchas gracias por formar parte de nuestro proyecto y ayudarnos a crecer!</p>
+                <p style="text-align: center;"><img src="../img/instructions/GIF3.gif"></p>
+                <br>
+            </ol>
+            </div>
+
+            <button class="accordion">2- ¿Cómo hacer minado de oraciones?</button>
+            <div class="panel">
+            <p>Para el ejemplo, he creado un mazo en Anki llamado "Test". Cuando nos disponemos a empezar el minado de oraciones, el primer paso será activar la extensión, seleccionar el diccionario que deseamos utilizar y, por último, elegir el mazo en el que se guardarán las palabras minadas.</p>
+            <p>Supongamos que estamos estudiando y leemos un artículo en internet, y queremos minar una palabra. Al seleccionarla, aparecerá un pequeño modal con la traducción y algunos ejemplos de uso. Dependiendo del diccionario seleccionado, podremos escuchar su pronunciación y, en algunos casos, se mostrará la representación fonética utilizando el Alfabeto Fonético Internacional (IPA).</p>
+            <p>Al desplazarnos hacia abajo en la ventana emergente, podemos observar una nota con parte del párrafo que hemos seleccionado. Podemos modificarla según nuestras preferencias, agregar alguna nota de ayuda o incluso dejar el párrafo o diálogo del cual hemos extraído la palabra. Por ejemplo, si utilizamos el diccionario italiano-inglés, podríamos incluir en las notas el significado en español para aquellos estudiantes de habla hispana que aún no dominan completamente el inglés. Esta nota se guardará en Anki.</p>
+            <p>Para agregar la palabra a Anki, simplemente debemos decidir cuál de los ejemplos que se muestran nos gusta más y hacer clic en el icono verde con un signo "+" para que se añada automáticamente al mazo que hemos especificado a la extensión.</p>
+            <p><strong>Es obligatorio tener Anki abierto mientras minamos, de lo contrario la extension no podrá conectarse a Anki y no podrá crear las tarjetas.</strong></p>
+            <p style="text-align: center;"><img src="../img/instructions/GIF4.gif" style=" height: 100%; width: 100%;"></p><br>
+            </div>
+
+            <button class="accordion">3- Preguntas frecuentes</button>
+            <div class="panel" style="margin-top: -5px;">
+                <div class="indice">
+                    <h1>Índice</h1>
+                    <ul>
+                      <li><a href="#seccion1">¿Cómo hacer minado de oraciones en Netflix?</a></li>
+                      <li><a href="#seccion2">¿Cómo agregar imágenes a las tarjetas de Anki?</a></li>
+                      <li><a href="#seccion3">¿Cómo agregar otros diccionarios?</a></li>
+                    </ul>
+                  </div>
+                  
+                <div class="contenido">
+                    <h3 id="seccion1">¿Cómo hacer minado de oraciones en Netflix?</h3>
+                    <p>Para minar palabras en series que estamos viendo en Netflix, la funcionalidad de la extensión es la misma que si lo hiciéramos en un artículo o página de internet. La única diferencia es que los subtítulos de las series de Netflix no son "clickeables", por lo tanto, no podemos seleccionar las palabras. Para ello, debemos instalar otra extensión llamada <a href="https://chrome.google.com/webstore/detail/language-reactor/hoombieeljmmljlkjmnheibnpciblicm" target="_blank">Language Reactor</a>.</p>
+                    <p>Language Reactor nos proporciona el significado, pero para utilizar nuestra extensión de diccionario, recomiendo seleccionar nuevamente la palabra que no entendemos desde el cuadro rojo que se muestra en la imagen.</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto17.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>Sugiero que el minado de la palabra se haga desde el cuadrado rojo, ya que contiene el diálogo exacto que se muestra en la serie, y eso se guardará en Anki. Si nos desplazamos hasta el final de la ventana, podremos observar una nota adicional que también incluye el diálogo exacto y que podemos modificar si así lo deseamos.</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto18.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>Para agregarlo a Anki, simplemente debemos seleccionar el ejemplo que más nos guste de entre todos los que se muestran y hacer clic en el icono verde con un símbolo de suma ("+") para que se agregue automáticamente al mazo que hemos indicado a la extensión.</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto19.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+
+                    <h3 id="seccion2">¿Cómo agregar imágenes a las tarjetas de Anki?</h3>
+                    <p>Supongamos que acabas de minar esta palabra:</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto8.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>Después de haber minado la palabra, debemos buscarla en el mazo de tarjetas, pero no con el propósito de estudiarla, sino de modificarla. Para ello, debemos hacer clic en "Explorar" en Anki:</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto9.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>Se abrirá una nueva ventana que mostrará todos nuestros mazos en el lado izquierdo, mientras que en el lado derecho aparecerán las tarjetas del mazo seleccionado.:</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto10.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>El mazo en el que miné la palabra "Computer" se llama Mazo de Prueba. Para seleccionarlo, simplemente lo elijo y, como mencioné anteriormente, en el lado derecho se mostrarán todas las tarjetas que contiene dicho mazo:</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto11.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>Cuando contamos con pocas palabras, resulta sencillo encontrar la palabra a la cual deseamos asociar una imagen. Sin embargo, cuando disponemos de una gran cantidad de palabras, lo más conveniente es emplear el siguiente método luego de seleccionar el conjunto de palabras clave:</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto12.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>Es fundamental incluir "deck: NOMBRE DE MAZO" seguido de la palabra que deseamos utilizar para la búsqueda de imágenes. Esto indica que se buscará dicha palabra únicamente en ese mazo específico y no en todos los mazos instalados en Anki. Una vez que hayamos encontrado la palabra, buscamos en la sección inferior el campo denominado "Picture":</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto13.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>Para agregar una imagen, puedes buscarla en Google o capturarla de una serie que estés viendo. En mi caso, usaré Google para buscar la palabra "minada" y luego tomaré una captura de pantalla de la imagen que más me guste utilizando el comando de captura de pantalla de Windows.</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto14.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>Cuando obtengas la captura de la imagen que deseas agregar a la tarjeta, intenta copiarla y almacenarla en la memoria del portapapeles de tu ordenador, ya que lo siguiente que debes hacer es volver a Anki y pegarla utilizando el comando de Windows Ctrl+V en el campo "Picture:".</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto15.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>Listo, no es necesario guardar ni realizar ninguna acción adicional. Simplemente cierra la ventana y cuando vuelvas a ver tu tarjeta durante el estudio, la imagen debería estar visible de inmediato.</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto16.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+
+                    <h3 id="seccion3">¿Cómo agregar otros diccionarios?</h3>
+                    <p>Para agregar otros diccionarios, es necesario contar con conocimientos de programación y crear un archivo JavaScript que cumpla con la función requerida. Una vez que el archivo esté funcionando correctamente, debes cargarlo en un dominio y copiar la URL del archivo en la pestaña "Opciones de diccionarios", en el campo "Script". Si el archivo funciona y has copiado la dirección correcta, presiona el botón "Cargar Scripts", y tu diccionario debería aparecer en la pestaña "Opciones de extensión" para poder utilizarlo. Recuerda que, al hacer clic en el icono de interrogación que se encuentra en la pestaña "Opciones de diccionarios", podrás acceder a una guía sobre cómo crear un diccionario en JavaScript. Ten en cuenta que estamos trabajando en traer más diccionarios a QuickAnki, así que ten paciencia y confía en nosotros.</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto6.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                </div>
+                
+            </div>
+        </div>
+
+
+<!-- ENGLISH VERSION -->
+        <div id="tab-2" class="tabcontent" style="display:none">
+            <button class="accordion">1- How does QuickAnki work?</button>
+            <div class="panel">
+                <p>Once you have installed QuickAnki, it is necessary to configure it according to your preferences. To do this, open the extension by following these steps to access the quick options menu:</p>
+                <p style="text-align: center;"><img style="border: 1px solid black;" src="../img/instructions/GIF1.gif"></p>
+                <p>Within this menu, you will be able to control the activation or deactivation of the extension, as well as enable or disable the "Mouse" function that allows you to look up the meaning of a word by simply selecting it. You can also select which dictionary will be active and, finally, determine which key will be used as a shortcut to search for the meaning of a word in case the Mouse does not perform the search correctly.</p>
+                <p>To access all the advanced options and customize the extension according to your preferences, click on the three dots located in the upper right corner. This will open a window that contains four tabs: "Extension Options", "Service Options", "Dictionary Options", and "Help Us Grow". Through these tabs, you can explore and adjust various settings to tailor the extension to your needs.</p>
+                <p style="text-align: center;"><img src="../img/instructions/tuto1.png"><br>Options Modal</p>
+                <br>
+                <p>Let me explain each of these tabs in detail:</p>
+            <ol>
+                <li><strong>Extension Options</strong> Tab:</li>
+                <p>In this tab, you will find the <strong>general options</strong> of the extension:</p>
+                <ul>
+                    <li><strong>Enabled:</strong> This option allows you to enable or disable the extension according to your needs. It is recommended to keep it disabled while browsing the Internet as it might automatically open the dictionary every time you select a word, which can be annoying. It is advisable to activate it only when you are sentence mining.</li>
+                    <li><strong>AutoSel.Hotkey:</strong> Here you can configure a keyboard shortcut to select the words or phrases you want to translate. You have four available options: "Off" (disables the shortcut), "Shift," "Ctrl," and "Alt." For example, if you are reading an article about Anki and come across an unfamiliar word like "Program," you can select it and use the configured keyboard shortcut. This will open a pop-up window of the dictionary where you can see the translation and some usage examples:
+                        <p"><img style="border: 1px solid black; height: 100%; width: 100%;" src="../img/instructions/tuto2.png"></p><br>
+                    </li>
+                    <li><strong>Mouse Sel. (Mouse Selection):</strong> This option allows you to open the dictionary simply by selecting a word with the mouse, without the need to use the configured keyboard shortcut.</li>
+                </ul>
+                <p>You will also find the section for <strong>dictionary options</strong>, which includes the following configurations:</p>
+                <ul>
+                    <li><strong>Selected Dict.:</strong> In this option, all the dictionaries that you have activated in the "Dictionary Options" tab (which will be explained later) are loaded. The selected dictionary here will be the one active at that moment. For example, in the image of the options modal, it shows that the "English -> Spanish | Cambridge" dictionary is active, which means it will only work for translations from English to Spanish.</li>
+                    <li><strong>Mono/Bilingual:</strong> This option allows you to convert the dictionary into a monolingual or bilingual one. If you select "Bilingual," the dictionary window will show the translation of the word, as shown in the previous image with the example of "Program." On the other hand, if you select "Monolingual," the window will display context examples related to the selected word:
+                        <p style="text-align: center;"><img style="border: 1px solid black;" src="../img/instructions/tuto3.png"></p><br>
+                    </li>
+                    <li><strong>Audio Pref.:</strong> Here you can select the type of pronunciation you prefer to be saved in Anki, either with a British accent or an American accent, in case you are studying English.</li>
+                    <li><strong>Max.Context# (Maximum Context):</strong> This setting allows you to specify the number of context examples you want to see alongside the selected word.</li>
+                    <li><strong>Max.Example# (Maximum Examples):</strong> This setting allows you to specify the number of examples of the word you want to see.</li>
+                </ul>
+                <p>Finally, if you want to see these instructions again, simply click on the question mark icon to the right of "general options".</p>
+                <br>
+                <li><strong>Services Options</strong> Tab</li>
+                <p style="text-align: center;"><img style="border: 1px solid black;" src="../img/instructions/tuto4.png"></p><br>
+                <p>In this tab, we will establish the connection between the extension and Anki, the flashcard platform.</p>
+                <p>Under the "Data Export" option, you will find two possible selections, with "None" being the default option. The other option is "Ankiconnect".</p>
+                <p>Before we proceed, it is necessary to install the Ankiconnect add-on in our Anki. To download and install this add-on, copy and paste the code into the Anki interface: <strong>2055492159</strong></p>
+                <p><img style="height: 100%; width: 100%;" src="../img/instructions/GIF2.gif"></p><br>
+                <p>Once you have installed Ankiconnect, it is important to restart Anki to ensure that the extension connects correctly.</p>
+                <p>Next, I will ask you to download and install this <a href="../fg/Mazo-de-Prueba.apkg">test deck</a> in your Anki. Once installed, you can uninstall it immediately. The purpose of this is to save a card format that we call "Sentence Mining," which uses the same card design style as the decks from <a href="https://refold.la/" target="_blank">Refold</a> (please note that this deck only provides the design and not the Refold decks themselves). If you wish to acquire Refold decks, I recommend visiting their website. Installing this deck is important to ensure an optimal card design when studying and performing word mining; it is also necessary for the configuration.</p>
+                <p>Great! Now that you have Ankiconnect and the test deck installed, we can adjust the "Services Options" tab. To begin, select the "Ankiconnect" option in the "Data Export" section. When you select Ankiconnect, the view will change, and I recommend configuring it as follows:</p>
+                <p style="text-align: center;"><img style="border: 1px solid black;" src="../img/instructions/tuto5.png"></p><br>
+                <p>In this section, we will be configuring how the flashcards will be saved in Anki, including their format and which deck they will be stored in. To change the deck where the words you are mining will be saved, simply select the desired deck in the "Deck Name" option (all available decks in your Anki will be loaded here).</p>
+                <p>Furthermore, the last option called "Allow Duplicate" allows you to avoid including duplicate words in your deck. However, if you wish to save duplicate words, you can modify this setting according to your preferences.</p>
+                <br>
+                <li><strong>Scripts Options</strong> Tab</li>
+                <p style="text-align: center;"><img style="border: 1px solid black;" src="../img/instructions/tuto6.png"></p><br>
+                <p>In this tab, you will find all the available dictionaries in the extension. They are displayed in the "System Scripts" section located at the bottom. You can activate or deactivate the dictionaries by clicking on the checkboxes to the left of each one. The activated dictionaries will appear in the first tab, "Extension Options," where you can select which one you want to use (only one can be used at a time).</p>
+                <p>In the "User Defined Scripts" section, you have the option to install your own dictionary. However, it is important to mention that this requires programming knowledge. If you want more information on how to develop your own dictionary, you can click on the question mark icon located to the right of the section. There you will find a guide that will help you get started. Additionally, I want to highlight that we are working to add more dictionaries to QuickAnki, so we ask for your patience and trust in our team as we continue to improve the extension.</p>
+                <p>Returning to the topic of activating dictionaries, as I mentioned earlier, you must activate or deactivate the dictionaries using the selection checkboxes located to the left of each one. Once you have decided which ones you want to activate, you should click on the bottom button labeled "Load Scripts." This will update the dictionaries in the first tab, "Extension Options," allowing you to select and activate the one you want to use.</p>
+                <p>Once you have completed this step, simply click on "Save and Close" to finish the configuration. Now you are ready to start mining sentences using the extension.</p>
+                <br>
+                <li><strong>Help Us Grow</strong> Tab</li>
+                <p>In this tab, you will find an opportunity to support the continuous development of our extension. If you find this tool useful and would like to contribute to its improvement and the addition of new features, we invite you to make a donation through PayPal.</p>
+                <p>Your generous contribution helps us cover the costs of maintenance, updates, and the time invested in the development of the extension. Every small donation makes a big difference and motivates us to continue providing a quality experience.</p>
+                <p>If you would like to show your support and make a donation, simply click on the donation button. You will be redirected to our donation page on PayPal, where you can make your contribution.</p>
+                <p>We sincerely appreciate your generosity and support. Your donation drives us to keep improving and adding new features to the extension. Thank you very much for being part of our project and helping us grow!</p>
+                <p style="text-align: center;"><img src="../img/instructions/GIF3.gif"></p>
+                <br>
+            </ol>
+            </div>
+
+            <button class="accordion">2- How to mine sentences?</button>
+            <div class="panel">
+            <p>For the example, I have created a deck in Anki called "Test". When we are ready to start mining sentences, the first step will be to activate the extension, select the desired dictionary, and finally choose the deck where the mined words will be stored.</p>
+            <p>Let's suppose we are studying and we come across an article on the internet, and we want to mine a word. Upon selecting it, a small modal will appear with the translation and some usage examples. Depending on the selected dictionary, we may be able to listen to its pronunciation and, in some cases, the phonetic representation using the International Phonetic Alphabet (IPA) will be displayed.</p>
+            <p>By scrolling down in the popup window, we can see a note with part of the paragraph we selected. We can modify it according to our preferences, add some helpful notes, or even leave the paragraph or dialogue from which we extracted the word. For example, if we use the Italian-English dictionary, we could include the meaning in Spanish in the notes for Spanish-speaking students who haven't fully mastered English yet. This note will be saved in Anki.</p>
+            <p>To add the word to Anki, we simply need to decide which of the displayed examples we like the most and click on the green icon with a "+" sign to automatically add it to the deck specified in the extension.</p>
+            <p><strong>It is mandatory to have Anki open while mining, otherwise the extension will not be able to connect to Anki and will not be able to create the cards.</strong></p>
+            <p style="text-align: center;"><img src="../img/instructions/GIF4.gif" style=" height: 100%; width: 100%;"></p><br>
+            </div>
+
+            <button class="accordion">3- Frequently Asked Questions</button>
+            <div class="panel" style="margin-top: -5px;">
+                <div class="indice">
+                    <h1>Index</h1>
+                    <ul>
+                    <li><a href="#section1">How to mine sentences on Netflix?</a></li>
+                    <li><a href="#section2">How to add images to Anki cards?</a></li>
+                    <li><a href="#section3">How to add other dictionaries?</a></li>
+                    </ul>
+                </div>
+
+                <div class="contenido">
+                    <h3 id="section1">How to mine sentences on Netflix?</h3>
+                    <p>To mine words in TV series we are watching on Netflix, the functionality of the extension is the same as if we were doing it on an article or web page. The only difference is that Netflix series subtitles are not clickable, so we can't select the words. To do that, we need to install another extension called <a href="https://chrome.google.com/webstore/detail/language-reactor/hoombieeljmmljlkjmnheibnpciblicm" target="_blank">Language Reactor</a>.</p>
+                    <p>Language Reactor provides us with the meaning, but to use our dictionary extension, I recommend selecting the word we don't understand again from the red box shown in the image.</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto17.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>I suggest mining the word from the red box since it contains the exact dialogue shown in the series, and that will be saved in Anki. If we scroll down to the end of the window, we can see an additional note that also includes the exact dialogue and can be modified if desired.</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto18.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>To add it to Anki, simply select the example you like the most from all the ones shown and click on the green icon with a plus symbol ("+") to automatically add it to the deck specified in the extension.</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto19.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+
+
+                    <h3 id="section2">How to add images to Anki cards?</h3>
+                    <p>Let's suppose you have just mined this word:</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto8.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>After mining the word, we need to search for it in the deck of cards, not to study it, but to modify it. To do that, we need to click on "Browse" in Anki:</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto9.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>A new window will open, showing all our decks on the left side, while the cards of the selected deck will appear on the right side:</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto10.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>The deck where I mined the word "Computer" is called Mazo de Prueba. To select it, I simply choose it, and as mentioned before, all the cards it contains will be displayed on the right side:</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto11.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>When we have a few words, it is easy to find the word we want to associate with an image. However, when we have a large number of words, it is more convenient to use the following method after selecting the set of keywords:</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto12.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>It is essential to include "deck: DECK NAME" followed by the word we want to use for image search. This indicates that the word will be searched only in that specific deck and not in all the decks installed in Anki. Once we have found the word, we look for the field called "Picture" in the lower section:</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto13.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>To add an image, you can search for it on Google or capture it from a TV series you are watching. In my case, I will use Google to search for the "mined" word and then take a screenshot of the image I like the most using the Windows screenshot command.</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto14.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>Once you have the screenshot of the image you want to add to the card, try to copy it and store it in your computer's clipboard, as the next step is to go back to Anki and paste it using the Windows command Ctrl+V in the "Picture" field.</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto15.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                    <p>That's it! There is no need to save or perform any additional action. Simply close the window, and when you see your card again during the study, the image should be visible immediately.</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto16.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+
+
+                    <h3 id="section3">How to add other dictionaries?</h3>
+                    <p>To add other dictionaries, it is necessary to have programming knowledge and create a JavaScript file that fulfills the required function. Once the file is working correctly, you need to host it on a domain and copy the file's URL in the "Dictionary Options" tab, under the "Script" field. If the file is functioning and you have copied the correct URL, press the "Load Scripts" button, and your dictionary should appear in the "Extension Options" tab for use. Remember that by clicking on the question mark icon in the "Dictionary Options" tab, you can access a guide on how to create a dictionary in JavaScript. Please note that we are working on bringing more dictionaries to QuickAnki, so be patient and trust us.</p>
+                    <p style="text-align: center;"><img src="../img/instructions/tuto6.png" style="border: 1px solid black; height: 100%; width: 100%;"></p><br>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/tabmenu.js"></script>
+    <script src="js/instructions.js"></script>
+</body>
+</html>

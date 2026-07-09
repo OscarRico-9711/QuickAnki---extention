@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, "Microsoft Yahei", sans-serif;
+    font-size: 12px;
+    width: 555px;
+    border-radius: 8px;
+}
+
+span.sl-col.sl-col-name {
+    margin-left: 25px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.grouppanel {
+    border-radius: 5px;
+    background-color: #f1f8e9;
+    margin: 5px 0;
+    padding: 0 0 3px;
+}
+
+.grouptitle {
+    font-weight: bold;
+    color: white;
+    background-color: #52489C;
+    border-radius: 5px 5px 0 0;
+    margin: 0 0 4px;
+    padding: 4px 15px;
+}
+
+.crosspanel {
+    padding: 0 6px;
+    width: 100%;
+}
+
+.leftpanel, .rightpanel {
+    padding: 0 6px;
+    float: left;
+    width: 50%;
+}
+
+.leftpanel {
+    border-right: 1px solid #e5e5e5;
+}
+
+.clearfix {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+.option-helps {
+    float: right;
+}
+
+.option-helps a {
+    color: white;
+}
+
+label, input, select {
+    width: 95px;
+    padding: 4px;
+    margin: 3px;
+    display: inline-block;
+    color: black;
+    border: 1px solid #4062BB;
+    border-radius: 4px;
+}
+
+label {
+    text-align: __MSG_labelAlignment__;
+    border-style: dashed;
+}
+
+.col-2x {
+    width: 212px;
+}
+
+.col-3x {
+    width: 317px;
+}
+
+.gifs {
+    display: inline-block;
+}
+
+.gif{
+    vertical-align: middle;
+}
+
+.button {
+    text-align: center;
+    width: 95px;
+    background-color: #52489C;
+    color: white;
+    padding: 4px;
+    margin: 6px 3px 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4a6eb0;
+}
+
+hr {
+    border: 1px;
+    margin: 4px 5px;
+    border-top: 1px solid #e5e5e5;
+}
+
+div.tabmenus {
+    border-bottom: 1px solid #d5d5d5;
+    margin-bottom: 0 !important;
+    padding-bottom: 2px;
+}
+
+a.tabmenu {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+.mb-16 {
+    margin-bottom: 16px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.btn-paypal {
+    position: relative;
+    border-radius: 1000px;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 6rem;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+    border: 0.125rem solid rgb(255, 209, 64);
+    font-family: PayPalOpen-Bold, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    padding: 0.625rem 1.875rem;
+    background: rgb(255, 209, 64);
+    color: rgb(0, 48, 135);
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    white-space: normal!important;
+}

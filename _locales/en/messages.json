@@ -1,0 +1,232 @@
+{
+   "appDesc": {
+      "message": "QuickAnki – Turn sentence mining into an easy experience."
+   },
+   "appName": {
+      "message": "QuickAnki"
+   },
+   "baCurrentDict": {
+      "message": "Dict."
+   },
+   "baDeckname": {
+      "message": "Deck"
+   },
+   "baEnabled": {
+      "message": "Enabled"
+   },
+   "baHotkey": {
+      "message": "AutoSel."
+   },
+   "baMouseselection": {
+      "message": "Mouse"
+   },
+   "baTags": {
+      "message": "Tags"
+   },
+   "baTitle": {
+      "message": "Quick options"
+   },
+   "btnClose": {
+      "message": "Close"
+   },
+   "btnSaveClose": {
+      "message": "Save & Close"
+   },
+   "btnSaveLoad": {
+      "message": "Load Scripts"
+   },
+   "builtin_select": {
+      "message": "Select Dictionary"
+   },
+   "enes_Cambridge": {
+      "message": "English -> Spanish | Cambridge"
+   },
+   "enen_Collins": {
+      "message": "English -> English | Collins"
+   },
+   "fres_Larousse": {
+      "message": "French -> Spanish | Larousse"
+   },
+   "iten_Collins": {
+      "message": "Italian -> English | Collins"
+   },
+   "esen_Collins": {
+      "message": "Spanish -> English | Collins"
+   },
+   "kren_Collins": {
+      "message": "Korean -> English | Collins"
+   },
+   "pten_Collins": {
+      "message": "Portuguese -> English | Collins"
+   },
+   "fren_Cambridge": {
+      "message": "French -> English | Cambridge"
+   },
+   "fren_Collins": {
+      "message": "French -> English | Collins"
+   },
+   "dees_Larousee": {
+      "message": "German -> Spanish | Larousse"
+   },
+   "dede_DWDS": {
+      "message": "German -> German | DWDS"
+   },
+   "grpAnki": {
+      "message": "Ankiconnect Options"
+   },
+   "grpDictionary": {
+      "message": "Dictionary Options"
+   },
+   "grpGeneral": {
+      "message": "General Options"
+   },
+   "grpSysScripts": {
+      "message": "System Scripts"
+   },
+   "grpUdfScripts": {
+      "message": "User Defined Scripts"
+   },
+   "labelAlignment": {
+      "message": "initial"
+   },
+   "lblAllowDuplicate": {
+      "message": "Allow Duplicate"
+   },
+   "lblAnkiStatus": {
+      "message": "Anki Status"
+   },
+   "lblAudio": {
+      "message": "Audio"
+   },
+   "lblAudioPref": {
+      "message": "Audio Pref."
+   },
+   "lblAudioPref0": {
+      "message": "#0(UK)"
+   },
+   "lblAudioPref1": {
+      "message": "#1(US)"
+   },
+   "lblCurrentDict": {
+      "message": "Selected Dict."
+   },
+   "lblDeckname": {
+      "message": "Deck Name"
+   },
+   "lblDefinition": {
+      "message": "Definition"
+   },
+   "lblDefinitions": {
+      "message": "Definitions"
+   },
+   "lblEnabled": {
+      "message": "Enabled"
+   },
+   "lblExpression": {
+      "message": "Expression"
+   },
+   "lblExtrainfo": {
+      "message": "ExtraInfo"
+   },
+   "lblHotkey": {
+      "message": "AutoSel.Hotkey"
+   },
+   "lblLingualType": {
+      "message": "Mono/Bilingual"
+   },
+   "lblMaxContext": {
+      "message": "Max.Context#"
+   },
+   "lblMaxExample": {
+      "message": "Max.Example#"
+   },
+   "lblMouseselection": {
+      "message": "Mouse Sel."
+   },
+   "lblPassword": {
+      "message": "Password"
+   },
+   "lblReading": {
+      "message": "Reading"
+   },
+   "lblSentence": {
+      "message": "Sentence"
+   },
+   "lblServices": {
+      "message": "Data Export"
+   },
+   "lblSignin": {
+      "message": "Signin"
+   },
+   "lblSignup": {
+      "message": "Signup"
+   },
+   "lblSysScripts": {
+      "message": "Script Name"
+   },
+   "lblTags": {
+      "message": "Note Tags"
+   },
+   "lblTypename": {
+      "message": "Type Name"
+   },
+   "lblUdfScripts": {
+      "message": "Script Name"
+   },
+   "lblUrl": {
+      "message": "URL"
+   },
+   "lblUsername": {
+      "message": "Username"
+   },
+   "lstCloud": {
+      "message": "Cloud"
+   },
+   "lstDescription": {
+      "message": "Description"
+   },
+   "lstName": {
+      "message": "Name"
+   },
+   "lstOnoff": {
+      "message": "Onoff"
+   },
+   "msgConnecting": {
+      "message": "Connecting..."
+   },
+   "msgFailed": {
+      "message": "Not Connected"
+   },
+   "msgSuccess": {
+      "message": "Connected:$INFORMATION$",
+      "placeholders": {
+         "information": {
+            "content": "$1"
+         }
+      }
+   },
+   "optTitle": {
+      "message": "QuickAnki"
+   },
+   "selAllowed": {
+      "message": "Allowed"
+   },
+   "selBilingual": {
+      "message": "Bilingual"
+   },
+   "selMonolingual": {
+      "message": "Monolingual"
+   },
+   "selNotAllowed": {
+      "message": "Not Allowed"
+   },
+   "tabExtensionTitle": {
+      "message": "Extension Options"
+   },
+   "tabScriptsTitle": {
+      "message": "Scripts Options"
+   },
+   "tabServicesTitle": {
+      "message": "Services Options"
+   }
+}

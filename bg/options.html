@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html  lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/tabmenu.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/scriptlist.css">
+    <link rel="stylesheet" href="css/options.css">
+    <title data-i18n="optTitle">QuickAnki</title>
+</head>
+
+<body>
+    <div class='container'>
+
+        <div class="tabmenus">
+            <a href="#" data-contentid="tab-1" class="tabmenu active" data-i18n="tabExtensionTitle">Opc. de extensión</a>
+            <a href="#" data-contentid="tab-2" class="tabmenu" data-i18n="tabServicesTitle">Opc. de servicios</a>
+            <a href="#" data-contentid="tab-3" class="tabmenu" data-i18n="tabScriptsTitle">Opc. de diccionarios</a>
+            <a href="#" data-contentid="tab-4" class="tabmenu">Ayúdanos a crecer</a>
+        </div>
+
+        <form>
+            <div id="tab-1" class="tabcontent">
+
+                <div class="grouppanel">
+                    <div class="grouptitle">
+                        <span data-i18n="grpGeneral">Opciones generales</span>
+                        <span class="option-helps"><a href="instructions.html" target="_blank">?</a></span>
+                    </div>
+                    <div class="leftpanel">
+                        <label data-i18n="lblEnabled">Activar</label>
+                        <div class="enabled">
+                            <input type="checkbox" value=true id="enabled">
+                            <label for="enabled"></label>
+                        </div>                        
+                        <label data-i18n="lblMouseselection">Mouse Sel.</label>
+                        <div class="enabled">
+                            <input type="checkbox" value=true id="mouseselection">
+                            <label for="mouseselection"></label>
+                        </div>
+                    </div>
+                    <div class="rightpanel">
+                        <label data-i18n="lblHotkey">Atajo</label>
+                        <select id="hotkey">
+                            <option value="0">Off</option>
+                            <option value="16">Shift</option>
+                            <option value="17">Ctrl</option>
+                            <option value="18">Alt</option>
+                        </select>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="grouppanel">
+                    <div class="grouptitle">
+                        <span data-i18n="grpDictionary">Opciones de diccionario</span>
+                    </div>
+                    <div class="crosspanel">
+                        <label for="dict" data-i18n="lblCurrentDict">Sel. Diccionario</label>
+                        <select id="dict" class="col-3x">
+                            <option value="encn-Default">encn-Default</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="leftpanel">
+                        <label data-i18n="lblLingualType">Mono/Bilingüe</label>
+                        <select id="monolingual">
+                            <option value="0" data-i18n="selBilingual">Bilingüe</option>
+                            <option value="1" data-i18n="selMonolingual">Monolingüe</option>
+                        </select>
+                        <label data-i18n="lblAudioPref">Pref. de audio</label>
+                        <select id="anki-preferred-audio">
+                            <option value="0" data-i18n="lblAudioPref0">UK</option>
+                            <option value="1" data-i18n="lblAudioPref1">US</option>
+                        </select>
+                    </div>
+                    <div class="rightpanel">
+                        <label data-i18n="lblMaxContext">Max. Contexto #</label>
+                        <select id="maxcontext">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <label data-i18n="lblMaxExample">Max. Ejemplo #</label>
+                        <select id="maxexample">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div id="tab-2" class="tabcontent" style="display:none">
+                <div class="grouppanel">
+                    <div class="grouptitle">
+                        <span data-i18n="grpAnki">Opciones de Ankiconnect</span>
+                    </div>
+                    <div class="crosspanel">
+                        <label data-i18n="lblServices">Servicio</label>
+                        <select id="services" class="col-2x">
+                            <option value="none">None</option>
+                            <option value="ankiconnect">Ankiconnect</option>
+                        </select>
+                        <label id="services-status">Anki Status</label>
+                    </div>
+                    <div id="user-options">
+                        <hr>
+                        <div class="crosspanel">
+                            <label data-i18n="lblUsername">ID</label>
+                            <input type="text" id="id" placeholder="Ankiweb Username" class="col-2x">
+                            <label><a href="https://ankiweb.net/account/register" target="_blank" data-i18n="lblSignup">?</a></label>
+                            <br>
+                            <label data-i18n="lblPassword">Password</label>
+                            <input type="password" id="password" placeholder="Ankiweb Password" class="col-2x">
+                            <label class="button" id="login" data-i18n="lblSignin">Signin</label>
+                        </div>
+                    </div>
+                    <div id="anki-options">
+                        <hr>
+                        <div class="crosspanel">
+                            <label data-i18n="lblDeckname">Sel. Mazo</label>
+                            <select id="deckname" class="col-3x"></select>
+                            <br>
+                            <label data-i18n="lblTypename">Formato</label>
+                            <select id="typename" class="col-3x"></select>
+                        </div>
+                        <hr>
+                        <div class="leftpanel">
+                            <label for="expression" data-i18n="lblExpression">Expresión</label>
+                            <select id="expression"></select>
+                            <label for="reading" data-i18n="lblReading">Pronunciación</label>
+                            <select id="reading"></select>
+                            <label for="definition" data-i18n="lblDefinition">Definición</label>
+                            <select id="definition"></select>
+                            <label for="definitions" data-i18n="lblDefinitions">Definiciones</label>
+                            <select id="definitions"></select>
+                        </div>
+                        <div class="rightpanel">
+                            <label for="sentence" data-i18n="lblSentence">Nota</label>
+                            <select id="sentence"> </select>
+                            <label for="extrainfo" data-i18n="lblExtrainfo">Extrainfo</label>
+                            <select id="extrainfo"> </select>
+                            <label for="url" data-i18n="lblUrl">URL</label>
+                            <select id="url"></select>
+                            <label for="audio" data-i18n="lblAudio">Audio</label>
+                            <select id="audio"></select>
+                        </div>
+                        <div class="clearfix"></div>
+                        <hr>
+                        <div class="crosspanel">
+                            <label data-i18n="lblTags">Note Tags</label>
+                            <input type="text" id="tags" placeholder="Tags" class="col-3x">
+                        </div>
+                        <div id="duplicate-option">
+                            <hr>
+                            <div class="crosspanel">
+                                <label data-i18n="lblAllowDuplicate">Tarj. duplicada</label>
+                                <select id="duplicate" class="col-3x">
+                                    <option value="0" data-i18n="selNotAllowed">No Permitido</option>
+                                    <option value="1" data-i18n="selAllowed">Permitido</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-3" class="tabcontent" style="display:none">
+                <div class="grouppanel">
+                    <div class="grouptitle">
+                        <span data-i18n="grpUdfScripts">Diccionario del usuario</span>
+                        <span class="option-helps"><a href="https://github.com/ninja33/ODH/blob/master/doc/development.md" target="_blank">?</a></span>
+                    </div>
+                    <div class="crosspanel">
+                        <label data-i18n="lblUdfScripts">Script</label>
+                        <input type="text" id="udfscripts" placeholder="http(s)://TuDominio.com/TuScript.js" class="col-3x">
+                    </div>
+                </div>
+                <div class="grouppanel">
+                    <div class="grouptitle">
+                        <span data-i18n="grpSysScripts">Diccionarios</span>
+                    </div>
+                    <div class="crosspanel" style="display:none">
+                        <label data-i18n="lblSysScripts">SYS Scripts Name</label>
+                        <input type="text" id="sysscripts" placeholder="System Scripts" class="col-3x">
+                    </div>
+                    <div class="crosspanel">
+                        <div id="scriptslisthead" class="sl-head">
+                            <span class="sl-col sl-col-onoff" data-i18n="lstOnoff">On/Off</span><span class="sl-col sl-col-cloud" data-i18n="lstCloud">Cloud</span><span class="sl-col sl-col-name" data-i18n="lstName">Nombre</span><span class="sl-col sl-col-description" data-i18n="lstDescription">Diccionario</span>
+                        </div>
+                        <div class="scriptlistwrapper">
+                            <div id="scriptslistbody" class="sl-body"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-4" class="tabcontent" style="display:none">
+                <div class="grouppanel">
+                    <div class="grouptitle">
+                        <span>Donaciones</span>
+                    </div>
+                    <div class="crosspanel">
+                        <p style="font-size: 14px;">¡Gracias por utilizar nuestra extensión! Si encuentras útil esta herramienta y deseas mostrar tu apoyo al desarrollo continuo de la misma, te invitamos a realizar una donación a través de PayPal. Tu contribución será muy apreciada y nos motivará a seguir mejorando y añadiendo nuevas características.</p>
+                        <p style="font-size: 14px;">Tus donaciones nos ayudan a cubrir los costos de mantenimiento, actualizaciones y tiempo invertido en el desarrollo de la extensión. Cada pequeña donación hace una gran diferencia y nos permite continuar brindando una experiencia de calidad.</p>
+                        <p style="font-size: 14px;">Haz clic en el botón de donación a continuación para ser redirigido a nuestra página de donaciones en PayPal. ¡Muchas gracias por tu generosidad y apoyo!</p>
+                        <div class="mb-16 mt-16">
+                            <a class="btn-paypal" href="https://www.paypal.com/donate/?hosted_button_id=X8TLFU4GG5FEW&locale.x=es_CL" target="_blank">
+                                <img src="../img/paypal-logo.svg" style="height: 24px;width: 24px;margin-right: 8px;">Donar con PayPal
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>                       
+        </form>
+        <hr>
+        <div class="grouppannel">
+            <div class="leftpanel" style="border-right:initial">
+                <label class="button" id="saveload" data-i18n="btnSaveLoad">Cargar Scripts</label>
+                <div class="gifs">
+                    <span class="gif" id="gif-load"><img src="/fg/img/load.gif" alt=""></span>
+                    <span class="gif" id="gif-good"><img src="/fg/img/good.png" alt=""></span>
+                    <span class="gif" id="gif-fail"><img src="/fg/img/fail.png" alt=""></span>
+                </div>
+            </div>
+            <div class="rightpanel">
+                <label class="button" id="saveclose" data-i18n="btnSaveClose">Guardar+Cerrar</label>
+                <label class="button" id="close" data-i18n="btnClose">Cerrar</label>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!--script src="js/polyfill.js"></script-->
+    <script src="../lib/jquery-3.0.0.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/tabmenu.js"></script>
+    <script src="js/options_api.js"></script>
+    <script src="js/options.js"></script>
+</body>
+
+</html>
