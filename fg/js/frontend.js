@@ -110,22 +110,11 @@ class QuickAnkiFrontend {
             this.actionBar = document.createElement('div');
             this.actionBar.id = 'qa-selection-actions';
             this.actionBar.innerHTML = `
-                <button class="qa-action-speak" title="Escuchar">▶</button>
-                <button class="qa-action-translate" title="Traducir">文</button>
                 <button class="qa-action-card" title="Crear card">+ Card</button>
             `;
             this.actionBar.addEventListener('mousedown', e => {
                 e.preventDefault();
                 e.stopPropagation();
-            });
-            this.actionBar.querySelector('.qa-action-speak').addEventListener('click', e => {
-                e.preventDefault();
-                this.speakSelection();
-            });
-            this.actionBar.querySelector('.qa-action-translate').addEventListener('click', e => {
-                e.preventDefault();
-                this.hideSelectionActions();
-                this.onSelectionEnd(e);
             });
             this.actionBar.querySelector('.qa-action-card').addEventListener('click', e => {
                 e.preventDefault();
@@ -135,7 +124,7 @@ class QuickAnkiFrontend {
             document.body.appendChild(this.actionBar);
         }
 
-        const width = 150;
+        const width = 74;
         let left = rect.left;
         let top = rect.bottom + 8;
         if (left + width > window.innerWidth - 10) left = window.innerWidth - width - 10;
