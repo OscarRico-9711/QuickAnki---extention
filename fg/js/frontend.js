@@ -9,7 +9,7 @@ class QuickAnkiFrontend {
         this.audio = {};
         this.enabled = true;
         this.mouseselection = true;
-        this.activateKey = 16; // shift 16, ctl 17, alt 18
+        this.activateHotkey = '16'; // 0:off, 16:shift, 17:ctrl, 18:alt, or custom text like | / A / Ctrl+K
         this.exitKey = 27; // esc 27
         this.maxContext = 1; //max context sentence #
         this.services = 'none';
@@ -30,13 +30,13 @@ class QuickAnkiFrontend {
     }
 
     onKeyDown(e) {
-        if (!this.activateKey)
+        if (!this.activateHotkey || this.activateHotkey === '0')
             return;
 
         if (!isValidElement())
             return;
 
-        if (this.enabled && (e.keyCode === this.activateKey || e.charCode === this.activateKey)) {
+        if (this.enabled && this.isActivationHotkey(e)) {
             if (!isEmpty(selectedText())) {
                 this.mousemoved = false;
                 this.openCardComposer(e);
@@ -54,6 +54,69 @@ class QuickAnkiFrontend {
 
         if (e.keyCode === this.exitKey || e.charCode === this.exitKey)
             this.popup.hide();
+    }
+
+    isActivationHotkey(e) {
+        const hotkey = String(this.activateHotkey || '').trim();
+        if (!hotkey || hotkey === '0') return false;
+
+        const keyCode = Number(hotkey);
+        if (!Number.isNaN(keyCode)) {
+            return e.keyCode === keyCode || e.charCode === keyCode;
+        }
+
+        const parts = hotkey.split('+').map(part => part.trim()).filter(Boolean);
+        if (parts.length === 0) return false;
+
+        if (parts.length === 1) {
+            return this.normalizedEventKey(e) === this.normalizeHotkeyPart(parts[0]);
+        }
+
+        const key = this.normalizeHotkeyPart(parts[parts.length - 1]);
+        const modifiers = new Set(parts.slice(0, -1).map(part => this.normalizeHotkeyPart(part)));
+        if (e.ctrlKey !== modifiers.has('control')) return false;
+        if (e.shiftKey !== modifiers.has('shift')) return false;
+        if (e.altKey !== modifiers.has('alt')) return false;
+        if (e.metaKey !== modifiers.has('meta')) return false;
+        return this.normalizedEventKey(e) === key;
+    }
+
+    normalizedEventKey(e) {
+        const legacy = {
+            16: 'shift',
+            17: 'control',
+            18: 'alt',
+            27: 'escape',
+            32: 'space',
+            37: 'left',
+            38: 'up',
+            39: 'right',
+            40: 'down',
+        };
+        return this.normalizeHotkeyPart(e.key || legacy[e.keyCode] || String.fromCharCode(e.keyCode || e.charCode || 0));
+    }
+
+    normalizeHotkeyPart(value) {
+        const key = String(value || '').toLowerCase();
+        const aliases = {
+            ctrl: 'control',
+            ctl: 'control',
+            control: 'control',
+            cmd: 'meta',
+            command: 'meta',
+            win: 'meta',
+            windows: 'meta',
+            option: 'alt',
+            esc: 'escape',
+            escape: 'escape',
+            spacebar: 'space',
+            ' ': 'space',
+            arrowleft: 'left',
+            arrowright: 'right',
+            arrowup: 'up',
+            arrowdown: 'down',
+        };
+        return aliases[key] || key;
     }
 
     onDoubleClick(e) {
@@ -229,7 +292,7 @@ class QuickAnkiFrontend {
         this.options = options;
         this.enabled = options.enabled;
         this.mouseselection = options.mouseselection;
-        this.activateKey = Number(this.options.hotkey);
+        this.activateHotkey = String(this.options.hotkey || '0');
         this.maxContext = Number(this.options.maxcontext);
         this.services = options.services;
         callback();

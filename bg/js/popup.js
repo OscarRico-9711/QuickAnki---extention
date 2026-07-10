@@ -31,7 +31,7 @@ async function onOptionChanged(e) {
 
     options.enabled = $('#enabled').prop('checked');
     options.mouseselection = $('#mouseselection').prop('checked');
-    options.hotkey = $('#hotkey').val();
+    options.hotkey = getHotkeyValue(options.hotkey);
 
     options.dictSelected = $('#dict').val();
 
@@ -39,6 +39,29 @@ async function onOptionChanged(e) {
     options.tags = $('#tags').val();
     let newOptions = await options_api.optionsChanged(options);
     optionsSave(newOptions);
+}
+
+const legacyHotkeyValues = ['0', '16', '17', '18'];
+
+function getHotkeyValue(previousValue) {
+    const selected = $('#hotkey').val();
+    if (selected !== 'custom') return selected;
+    return ($('#hotkey-custom').val() || previousValue || '').trim();
+}
+
+function setHotkeyControls(hotkey) {
+    const value = String(hotkey || '0');
+    const isLegacy = legacyHotkeyValues.includes(value);
+    $('#hotkey').val(isLegacy ? value : 'custom');
+    $('#hotkey-custom').val(isLegacy ? '' : value);
+    $('#hotkey-custom').toggle(!isLegacy);
+}
+
+function onHotkeySelectChanged(e) {
+    const isCustom = $('#hotkey').val() === 'custom';
+    $('#hotkey-custom').toggle(isCustom);
+    if (isCustom) $('#hotkey-custom').focus();
+    onOptionChanged(e);
 }
 
 function onMoreOptions() {
@@ -54,7 +77,7 @@ async function onReady() {
     let options = await optionsLoad();
     $('#enabled').prop('checked', options.enabled);
     $('#mouseselection').prop('checked', options.mouseselection);
-    $('#hotkey').val(options.hotkey);
+    setHotkeyControls(options.hotkey);
     populateDictionary(options.dictNamelist);
     $('#dict').val(options.dictSelected);
     $('#deckname').val(options.deckname);
@@ -62,7 +85,9 @@ async function onReady() {
 
     $('#enabled').change(onOptionChanged);
     $('#mouseselection').change(onOptionChanged);
-    $('#hotkey').change(onOptionChanged);
+    $('#hotkey').change(onHotkeySelectChanged);
+    $('#hotkey-custom').change(onOptionChanged);
+    $('#hotkey-custom').keyup(onOptionChanged);
     $('#dict').change(onOptionChanged);
 
     $('#deckname').change(onOptionChanged);
